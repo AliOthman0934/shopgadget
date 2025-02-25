@@ -1,40 +1,113 @@
-.header{
-    height: 250px;
-    width: 100%;
-    background-color: var(--primary-color);
+/* General Styling */
+.header {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #6e57e0, #fc5185);
+    padding: 20px;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
-.top-header{
+/* Top Header */
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.top-header-menu i,
+.top-header-logo i,
+.top-header-phone i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.top-header-logo {
+    font-size: 22px;
+    font-weight: bold;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 0 30px;
-    background-color: var(--secondary-color);
-    height: 20%;
-    color: var(--main-color);
 }
 
-.top-header-menu{
-    display: none;
+.top-header-text {
+    font-size: 18px;
+    font-weight: 600;
 }
 
-.top-header-logo{
-    font-size: 24px;
-    font-weight: 500;
-    cursor: pointer;
-}
-
-.top-header-logo i {
-    margin-left: 4px;
-}
-
-.top-header-text{
-    font-size: 21px;
+.top-header-phone {
+    display: flex;
+    align-items: center;
     font-weight: bold;
-    color: var(--warning-color);
 }
 
-.top-header-phone{
-    font-size: 24px;
-    font-weight: 500;
+/* Middle Header */
+.middle-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+/* Search Box */
+.middle-header-search-box {
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+
+.middle-header-search-box input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-box-btn {
+    padding: 10px 15px;
+    border: none;
+    background: #feca57;
+    color: black;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+.search-box-btn:hover {
+    background: #ff9f43;
+}
+
+/* Shopping Cart */
+.middle-header-shopping-cart {
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.middle-header-shopping-cart i {
+    margin-left: 10px;
+    font-size: 22px;
+}
+
+.cart-notification {
+    background: red;
+    color: white;
+    padding: 3px 8px;
+    font-size: 14px;
+    border-radius: 50%;
+    margin-left: 5px;
+    font-weight: bold;
 }
