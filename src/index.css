@@ -20,7 +20,7 @@
 
 body {
   background-color: var(--main-color);
-  direction: rtl;
+  /* direction: rtl; */
 }
 
 input:focus,
