@@ -1,4 +1,4 @@
-/* General Styling */
+/* General Header Styling */
 .header {
     font-family: "Poppins", sans-serif;
     background: linear-gradient(135deg, #6e57e0, #fc5185);
@@ -19,22 +19,21 @@
 }
 
 .top-header-menu i,
-.top-header-logo i,
+.top-headre-log i,
 .top-header-phone i {
     font-size: 20px;
     margin-right: 10px;
 }
 
-.top-header-logo {
+.bi-basket2{
+    margin-left: 5px;
+}
+
+.top-headre-log {
     font-size: 22px;
     font-weight: bold;
     display: flex;
     align-items: center;
-}
-
-.top-header-text {
-    font-size: 18px;
-    font-weight: 600;
 }
 
 .top-header-phone {
@@ -87,7 +86,7 @@
 }
 
 /* Shopping Cart */
-.middle-header-shopping-cart {
+.middle-header-shoping-cart {
     font-size: 18px;
     font-weight: bold;
     display: flex;
@@ -97,12 +96,12 @@
     border-radius: 10px;
 }
 
-.middle-header-shopping-cart i {
+.middle-header-shoping-cart i {
     margin-left: 10px;
     font-size: 22px;
 }
 
-.cart-notification {
+.cart-notificcation {
     background: red;
     color: white;
     padding: 3px 8px;
@@ -110,4 +109,50 @@
     border-radius: 50%;
     margin-left: 5px;
     font-weight: bold;
+}
+
+/* Navbar Styling */
+.navbar {
+    margin-top: 15px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    padding: 10px 0;
+}
+
+.navbar-linls {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-link {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.navbar-link:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar-linls {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-link {
+        width: 100%;
+        text-align: center;
+    }
 }
